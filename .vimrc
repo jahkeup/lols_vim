@@ -64,7 +64,6 @@ set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 :nmap cW bcw
 
-
 " http://stackoverflow.com/questions/2586984/how-can-i-swap-positions-of-two-open-files-in-splits-in-vim
 " use \mw to mark swapping and \pw to swap
 function! MarkWindowSwap()
@@ -92,6 +91,7 @@ nmap <silent> <leader>pw :call DoWindowSwap()<CR>
 " Store Swap and Backups eleswhere!
 set directory=~/.vim/swap
 set backupdir=~/.vim/backup
+set undodir=~/.vim/undo
 
 
 " Code Completion
